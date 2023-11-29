@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+	<link rel="stylesheet" href="login.css">
+    <script>
+        function submit() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            
+            if (email === "sanjana14.com" && password === "123") {
+                alert("Login Successful, Welcome to the Website " + email + "!");
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+	<img src="https://d33wubrfki0l68.cloudfront.net/deafe47e0ea96b853fe7b4131a5674263f601ec2/1d342/assets/img/crown.png">
+	<h1>Login Page</h1>
+    <label>Email:</label>
+    <input type="text" id="email"><br><br>
+    <label>Password:</label>
+    <input type="password" id="password"><br><br>
+    <button onclick="submit()">SUBMIT</button>
+</body>
+</html>
+
